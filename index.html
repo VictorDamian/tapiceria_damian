@@ -1,174 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página web AlexCG</title>
-    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <title>Multi Level Dropdown</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-    <header>
+<!--Nav markup goes here-->
+<header>
+    <div class="container">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
+            <div class="menu-icons">
+                <i class="icon ion-md-menu"></i>
+                <i class="icon ion-md-close"></i>
+            </div>
+            <a href="index.html" class="logo">
+                <i class="icon ion-md-hammer"></i>
+            </a>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">Tapiceria</a>
+                </li>
+                <li>
+                    <a href="#">Catalogo
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Autos</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles
+                                <i class="icon ion-md-arrow-dropdown"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Sillas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sillones</a>
+                                </li>
+                                <li>
+                                    <a href="#">Asientos...
+                                        <i class="icon ion-md-arrow-dropdown"></i>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">Motos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bicicletas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Autos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Lonas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Galeria</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+                <li class="move-right btn">
+                    <a href="#">Inicio</a>
+                </li>
+            </ul>
         </nav>
-        <section class="textos-header">
-            <h1>Potencia tus ventas al menos un 200%</h1>
-            <h2>Con una página web potente</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
-    </header>
-    <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nuestro producto</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Los mejores productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <h3><span>2</span>Los mejores productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                </div>
-            </div>
-        </section>
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Portafolio</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img2.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img3.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img4.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img5.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img6.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img7.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
+    </div>
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #f2f2f2;"></path>
+        </svg></div>
+</header>
+<section class="contenedor sobre-nosotros">
+    <h2 class="titulo">Nuestro producto</h2>
+    <div class="contenedor-sobre-nosotros">
+        <img src="images/1.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+            <h3><span>1</span>Los mejores productos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                velit doloribus laboriosam ut.</p>
+            <h3><span>2</span>Los mejores productos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                velit doloribus laboriosam ut.</p>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <section class="portafolio">
+        <div class="contenedor">
+            <h2 class="titulo">Portafolio</h2>
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <img src="images/1.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="clientes contenedor">
-            <h2 class="titulo">Que dicen nuestros clientes</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                <div class="imagen-port">
+                    <img src="images/2.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                <div class="imagen-port">
+                    <img src="images/3.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Nuestros servicios</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                <div class="imagen-port">
+                    <img src="images/4.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>8296312</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>8296312</p>
-            </div>
-            <div class="content-foo">
-                <h4>Location</h4>
-                <p>8296312</p>
+                <div class="imagen-port">
+                    <img src="images/5.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="images/6.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="images/7.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="images/8.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Nuestro trabajo</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; AlexCG Design | Jordan Alexander</h2>
-    </footer>
+    </section>
+    <section class="clientes contenedor">
+        <h2 class="titulo">Que dicen nuestros clientes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/face1.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/face2.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-services">
+        <div class="contenedor">
+            <h2 class="titulo">Nuestros servicios</h2>
+            <div class="servicio-cont">
+                <div class="servicio-ind">
+                    <img src="images/9.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                </div>
+                <div class="servicio-ind">
+                    <img src="images/10.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                </div>
+                <div class="servicio-ind">
+                    <img src="images/1.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Celular</h4>
+            <p>+52 456 655 0780</p>
+        </div>
+        <div class="content-foo">
+            <h4>Correo</h4>
+            <p>tapiceriadamian@gmail.com</p>
+        </div>
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>Valle de Santiago, Guanajuato</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Tapicería Damian | Victor Damian</h2>
+</footer>
+<!--End nav-->
+<!--Hero-->
+<section class="hero">
+    <div class="text">
+        <h2>Proudly serving</h2>
+        <h1>Tapicería Damian</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="btn">Learn more</a>
+    </div>
+</section>
+<script src="scripts.js"></script>
 </body>
-
 </html>
