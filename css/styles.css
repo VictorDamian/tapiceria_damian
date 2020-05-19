@@ -30,9 +30,9 @@ header{
     position: relative;
     height: 100vh;
     background: -webkit-linear-gradient(to bottom, hsla(340, 95%, 50%, 0.459),
-     hsla(317, 45%, 52%, 0.664)), url(images/1);
+     hsla(317, 45%, 52%, 0.664)), url(images/3.jpg);
     background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
-    url("images/3.jpg") center no-repeat;
+    url(images/3.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     top: 0;
@@ -343,7 +343,6 @@ main .sobre-nosotros{
     text-align: justify;
 }
 /* Galeria */
-
 
 .portafolio{
     background: #191919;
