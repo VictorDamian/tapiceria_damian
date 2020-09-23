@@ -32,9 +32,9 @@ header {
     width: 100%;
     height: 600px;
     background: -webkit-linear-gradient(to bottom, hsla(340, 95%, 50%, 0.459),
-     hsla(317, 45%, 52%, 0.664)), url(../imgs/muebles/portada.jpg);
+     hsla(317, 45%, 52%, 0.664)), url(../imgs/inicio/20200509_140145-min.jpg);
     background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
-    url(../imgs/muebles/portada.jpg) center no-repeat;
+    url(../imgs/inicio/20200509_140145-min.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     top: 0;

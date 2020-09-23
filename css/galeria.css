@@ -9,8 +9,13 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+nav{
+    text-align: right;
+    padding: 0px 50px 0 0;
+}
 
 button{
+	text-align: right;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -38,8 +43,7 @@ a {
 }
 
 .contenedor {
-	width: 90%;
-	max-width: 800px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -104,6 +108,7 @@ header .categorias a.activo {
 	position: relative;
 	width: 100%;
 	opacity: 0;
+	margin: 20px;
 	transition: opacity 0.5s linear 1s;
 }
 
@@ -230,6 +235,45 @@ footer .contenedor-icono:hover a {
 	animation: icono .5s ease;
 }
 
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #0088a9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
 @keyframes icono {
 	from {
 		transform: rotate3d(0,0,0,0);
@@ -238,16 +282,6 @@ footer .contenedor-icono:hover a {
 		transform: rotate3d(0,1,0, 360deg);
 	}
 }
-
-footer .creado-por {
-	margin-bottom: 40px;
-	text-align: center;
-	font-size: 14px;
-	color: #c13584;
-}
-
-footer .creado-por a {color: #000;}
-footer .creado-por a:hover {text-decoration: underline;}
 
 /* ------------------------- */
 /* Mediaqueries */
@@ -283,6 +317,30 @@ footer .creado-por a:hover {text-decoration: underline;}
 	header .barra-busqueda {
 		width: 100%;
 	}
+
+	.contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 3px solid #0088a9;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 700px) {
