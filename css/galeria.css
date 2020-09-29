@@ -175,12 +175,7 @@ header .categorias a.activo {
 }
 
 .overlay .descripcion {
-	display: block;
-	background: #fff;
-	padding: 20px;
-	text-align: center;
 	margin-top: 5px;
-	border-radius: 10px;
 	max-width: 50%;
 }
 
@@ -271,12 +266,7 @@ footer{
 	}
 
 	.overlay .descripcion {
-		display: block;
-		background: #fff;
-		padding: 10px;
-		text-align: center;
 		margin-top: 5px;
-		border-radius: 10px;
 		max-width: 80%;
 	}
 
